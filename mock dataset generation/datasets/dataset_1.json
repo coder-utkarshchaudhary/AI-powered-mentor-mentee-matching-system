@@ -1,0 +1,242 @@
+{
+    "mentor_1": {
+        "Expertise": [
+            "Data Science",
+            "Machine Learning",
+            "Python Programming"
+        ],
+        "Weaknesses": [
+            "Artistic Creativity",
+            "Fine Arts",
+            "Graphic Design"
+        ],
+        "Interests": [
+            "Reading about Quantum Mechanics",
+            "Learning Guitar",
+            "Blogging"
+        ],
+        "Teaching Style": "Hands-on Approach, Practical Demonstrations, Real-World Projects",
+        "Professional Goals": [
+            "Publish Research Papers on Deep Learning",
+            "Become a Senior Data Scientist",
+            "Develop an AI Course"
+        ],
+        "Availability": "Available on Weekends, 2 hours per session"
+    },
+    "mentor_2": {
+        "Expertise": [
+            "Physics",
+            "Astrophysics",
+            "Computational Modeling"
+        ],
+        "Weaknesses": [
+            "Advanced Theoretical Physics",
+            "String Theory",
+            "Quantum Computing"
+        ],
+        "Interests": [
+            "Exploring Sustainable Energy Solutions",
+            "Photography",
+            "Gardening"
+        ],
+        "Teaching Style": "Conceptual Explanations, Detailed Discussions, Step-by-Step Guidance",
+        "Professional Goals": [
+            "Start an EdTech Venture",
+            "Design AI-powered Learning Systems",
+            "Write a Physics Textbook"
+        ],
+        "Availability": "Evening Hours (6 PM - 9 PM), Flexible on Public Holidays"
+    },
+    "mentor_3": {
+        "Expertise": [
+            "Marketing Strategies",
+            "Business Analytics",
+            "Public Speaking"
+        ],
+        "Weaknesses": [
+            "Advanced Finance Concepts",
+            "Derivatives Trading",
+            "Cryptocurrency"
+        ],
+        "Interests": [
+            "Experimenting with AI Art",
+            "Traveling",
+            "Learning New Languages"
+        ],
+        "Teaching Style": "Group Sessions, Peer-Learning Advocacy, Collaborative Problem-Solving",
+        "Professional Goals": [
+            "Become a Thought Leader in Marketing",
+            "Conduct Workshops Worldwide",
+            "Publish a Marketing Book"
+        ],
+        "Availability": "1 Hour Daily (Monday-Friday), Not Available on Weekends"
+    },
+    "mentor_4": {
+        "Expertise": [
+            "Software Development",
+            "Agile Methodologies",
+            "Cloud Computing"
+        ],
+        "Weaknesses": [
+            "Graphic Design",
+            "User Interface Aesthetics",
+            "Video Editing"
+        ],
+        "Interests": [
+            "Coding Challenges",
+            "Hiking",
+            "Virtual Reality"
+        ],
+        "Teaching Style": "Interactive Coding Sessions, Agile Workshops, Case Studies",
+        "Professional Goals": [
+            "Lead a Tech Startup",
+            "Develop Innovative Software Solutions",
+            "Mentor Junior Developers"
+        ],
+        "Availability": "Weekday Mornings (8 AM - 11 AM), Not Available on Holidays"
+    },
+    "mentor_5": {
+        "Expertise": [
+            "Environmental Science",
+            "Ecology",
+            "Conservation Biology"
+        ],
+        "Weaknesses": [
+            "Urban Planning",
+            "Architecture",
+            "Industrial Design"
+        ],
+        "Interests": [
+            "Bird Watching",
+            "Environmental Activism",
+            "Writing Poetry"
+        ],
+        "Teaching Style": "Field Trips, Experiential Learning, Interactive Lectures",
+        "Professional Goals": [
+            "Influence Environmental Policy",
+            "Publish a Book on Conservation",
+            "Lead Conservation Projects"
+        ],
+        "Availability": "Afternoons (1 PM - 4 PM), Available on Weekends"
+    },
+    "mentor_6": {
+        "Expertise": [
+            "Cybersecurity",
+            "Network Administration",
+            "Ethical Hacking"
+        ],
+        "Weaknesses": [
+            "Software Development",
+            "Database Management",
+            "UI/UX Design"
+        ],
+        "Interests": [
+            "Cryptography",
+            "Martial Arts",
+            "Science Fiction"
+        ],
+        "Teaching Style": "Scenario-Based Learning, Interactive Labs, Problem-Solving",
+        "Professional Goals": [
+            "Develop a Cybersecurity Framework",
+            "Conduct International Workshops",
+            "Write a Cybersecurity Manual"
+        ],
+        "Availability": "Weekday Evenings (5 PM - 8 PM), Available on Weekends"
+    },
+    "mentor_7": {
+        "Expertise": [
+            "Biochemistry",
+            "Molecular Biology",
+            "Genetic Engineering"
+        ],
+        "Weaknesses": [
+            "Clinical Medicine",
+            "Pharmacology",
+            "Veterinary Science"
+        ],
+        "Interests": [
+            "Gene Editing Technologies",
+            "Cooking",
+            "Classical Music"
+        ],
+        "Teaching Style": "Laboratory-Based Learning, Detailed Analysis, Research-Oriented",
+        "Professional Goals": [
+            "Lead a Research Team",
+            "Publish in Top Journals",
+            "Develop a Biotech Startup"
+        ],
+        "Availability": "Flexible Hours, Available for Intensive Workshops"
+    },
+    "mentor_8": {
+        "Expertise": [
+            "Economics",
+            "International Trade",
+            "Policy Analysis"
+        ],
+        "Weaknesses": [
+            "Microeconomics",
+            "Behavioral Economics",
+            "Game Theory"
+        ],
+        "Interests": [
+            "Global Politics",
+            "Chess",
+            "Historical Novels"
+        ],
+        "Teaching Style": "Case Studies, Policy Debates, Analytical Discussions",
+        "Professional Goals": [
+            "Advise Governmental Bodies",
+            "Publish Policy Papers",
+            "Teach at a Prestigious University"
+        ],
+        "Availability": "Weekday Afternoons (2 PM - 5 PM), Not Available on Weekends"
+    },
+    "mentor_9": {
+        "Expertise": [
+            "Artificial Intelligence",
+            "Robotics",
+            "Control Systems"
+        ],
+        "Weaknesses": [
+            "Human-Computer Interaction",
+            "Social Robotics",
+            "Cognitive Science"
+        ],
+        "Interests": [
+            "Robotic Competitions",
+            "3D Printing",
+            "Astronomy"
+        ],
+        "Teaching Style": "Project-Based Learning, Interactive Workshops, Technical Seminars",
+        "Professional Goals": [
+            "Develop Autonomous Systems",
+            "Collaborate with Tech Giants",
+            "Innovate in AI Research"
+        ],
+        "Availability": "Weekends, Full Day Availability"
+    },
+    "mentor_10": {
+        "Expertise": [
+            "Cultural Anthropology",
+            "Sociolinguistics",
+            "Ethnography"
+        ],
+        "Weaknesses": [
+            "Archaeology",
+            "Paleontology",
+            "Geology"
+        ],
+        "Interests": [
+            "Cultural Festivals",
+            "Language Preservation",
+            "Travel Writing"
+        ],
+        "Teaching Style": "Storytelling, Cultural Immersion, Field Research",
+        "Professional Goals": [
+            "Document Endangered Languages",
+            "Publish Ethnographic Studies",
+            "Promote Cultural Awareness"
+        ],
+        "Availability": "Flexible, Available for Field Trips and Cultural Events"
+    }
+}
