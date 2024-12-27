@@ -6,41 +6,37 @@ This project aims to develop an AI-powered system for alloting the right mentors
 ---
 
 ## **Implementation Details**
-1. **Vector DB powered similarity search**:
+1. **Mock Dataset Generation**:
+    - Generated mock dataset of 300 mentors with 6 key attributes.
+        - Expertise
+        - Weaknesses
+        - Interests
+        - Teching Style
+        - Professional Goals
+        - Availability
+
+    - All the attibutes are a key indicator of a mentor profile. With carefully crafted prompts to GPT-4o model, a pseudo-realistic dataset was crafted.
+
+    - Combining this dataset with student dataset from the [AI-powered-personalised-learning-path-for-students task](https://github.com/coder-utkarshchaudhary/AI-powered-personalised-learning-path-for-students.git), we get two rich datasets containing explicit information about students and mentors.
+
+2. **Feature Engineering**:
+    - Explicit feature engineering is done on both student and mentor datasets.
+    - This adds more information about an object (read: students and mentors) and help make the vectors more information rich.
+
+3. **Vector DB powered similarity search**:
     - [Google's BERT](https://huggingface.co/docs/transformers/en/model_doc/bert) model is used to encode the textual database into vector collections with the schema
     ```plaintext
     {"id" : <vector_representation>}
     ```
-    - The solution involves the use of MilvusDB to store these vectors. MilvusDB provides in-built similarity search techniques that can be used 
-    - The generated dataset is used to finetune "session parameters" for instances created during production use. This ensures accurate, reliable and contextually appropriate answers.
-    - Explicitly passed System Prompts which help increase accuracy of the task without overhead of computation resources needed for finetuning model parameters.
-
-2. **Mock Dataset Generation**:
-    - Generated mock dataset with 7 student centric attributes.
-        - Strengths
-        - Weaknesses
-        - Interests
-        - Learning Style
-        - Learning Challenges
-        - Goals
-        - Availability
-
-    - All the attibutes represent a key area that shape the learning plan. Clever prompt engineering ensures learning paths generated suit the needs of the students.
-
-3. **Unstructured Data Handling**:
-    - JSON parsing and processing for creation of labelled (student_attribute, study_plan) labels for finetuning "session parameters".
-
-4. **Web Interface**:
-    - Developed using StreamLit to git a GUI for the student to interact with the model.
-    - A single-session chatbot interface where users can input attributes and query the generated plan.
+    - The solution involves the use of MilvusDB to store these vectors. MilvusDB provides in-built similarity search techniques that can be used to find the perfect mentor for each student.
 
 ---
 
 ## **How to Run?**
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/coder-utkarshchaudhary/AI-powered-personalised-learning-path-for-students.git
-   cd AI-powered-personalised-learning-path-for-students
+   git clone https://github.com/coder-utkarshchaudhary/AI-powered-mentor-mentee-matching-system.git 
+   cd AI-powered-mentor-mentee-matching-system
    ```
 
 2. **Install Dependencies**:
@@ -54,36 +50,35 @@ This project aims to develop an AI-powered system for alloting the right mentors
    ```
    OPENAI_API_KEY=your_openai_api_key
    ```
+   <i><b>NOTE: This is only needed if you want to make a new dataset from scratch.</b></i>
 
-4. **Run the Application**:
-   Start the Streamlit application:
-   ```bash
-   streamlit run main.py
-   ```
+4. **Run the project**:
+   In the ```main.ipynb``` file, press Run All.
+   <i><b>NOTE:<br>1. Ensure that you have a GPU to run BERT tokenizer.<br>2. BERT tokenizer takes some tme to download, so allow the notebook to run completely.</b></i>
 
 ---
 
 ## **Final Submission**
-- **Codebase**: [Link to GitHub repository](https://github.com/coder-utkarshchaudhary/AI-powered-personalised-learning-path-for-students.git)
-- **Video**: Click on image(s) below for the video demo<br><a href="https://drive.google.com/file/d/13izGcUk4rhv2NAgRUMfvRE8oTyFhvtSb/view?usp=sharing" target="_blank"><img src="images/Form Window.png" alt="Form Window"></a><br><a href="https://drive.google.com/file/d/13izGcUk4rhv2NAgRUMfvRE8oTyFhvtSb/view?usp=sharing", target="_blank"><img src="images/Chat Window.png" alt="Chat Window"></a>
+- **Codebase**: [Link to GitHub repository](https://github.com/coder-utkarshchaudhary/AI-powered-mentor-mentee-matching-system.git)
+- **Technical Document**: [Link to Google Docs]()
+
 ---
 
 ## **Notes**
-1. The project is powered by GPT-4o model. The model's API is access via On-Demand platform. The code will not directly work for OpenAI API calls directly. Please modify the ```get_llm_response``` function in ```utils.py```.
+1. This project uses GPT-4o model. The model's API is access via On-Demand platform. The code will not directly work for OpenAI API calls directly. Please modify the ```get_llm_response``` function in ```datagen.py```.
 
-    #### Blockers and Possible Fixes:
-    1.  LLMs can't access and obtain information about user profiles from social media websites. Hence a lot of entires for mentors in the dataset are "John Doe" or "Jane Doe" or "Emily ...". This can be easily fixed by developing a _vector database of mentor profiles_ and establishing a _RAG on GPT-4o and said database_.
+2. BERT needs a GPU for faster inference. On each run, the BERT configurations download from huggingface. Be patient while the model is downloading.
 
     #### Future Scope:
-    1. Implementation of RAG and Agents on a custom dataset (scapped/collected).
-    2. Validation of results via feedback loop of multi LLM agentic framework.
-    3. Multi-chat support on the UI.
+    1. A RAG system can be incorporated on mentor and student datasets for Agent powered mentor-mentee matching.
+    2. Implementation of ML models like Linear Regression, XGBoost, ANNs etc. for assigning custom weights to custom embeddings generated using BERT.
+    3. Implementation of a UI system with user input importance for search criteria.
 
 ---
 
 ## **Acknowledgement**
-Thanks to the open-source libraries and tools used in this project --> OpenAI, Streamlit and On-Demand.<br>
-This project was made as a part of the **Alcovia Intern Mandatory Task**. I extend a heartfelt thank you to the Alcovia team for providing me this opportunity.
+Thanks to the open-source libraries and tools used in this project --> OpenAI, MilvusDB, Torch, Huggingface and On-Demand.<br>
+This project was made as a part of the **Alcovia Intern Optional Task - 1**. I extend a heartfelt thank you to the Alcovia team for providing me this opportunity.
 
 ---
 
