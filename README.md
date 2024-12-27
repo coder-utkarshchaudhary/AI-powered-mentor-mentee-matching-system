@@ -60,7 +60,7 @@ This project aims to develop an AI-powered system for alloting the right mentors
 
 ## **Final Submission**
 - **Codebase**: [Link to GitHub repository](https://github.com/coder-utkarshchaudhary/AI-powered-mentor-mentee-matching-system.git)
-- **Technical Document**: [Link to Google Docs]()
+- **Technical Document**: [Link to project report](https://docs.google.com/document/d/1U4k_Bzr_40DBIplSuO9Fs8wz9nGNRPyxr0QXCobkv8g/edit?usp=sharing)
 
 ---
 
