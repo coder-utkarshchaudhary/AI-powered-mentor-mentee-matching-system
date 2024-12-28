@@ -11,7 +11,7 @@ This project aims to develop an AI-powered system for alloting the right mentors
         - Expertise
         - Weaknesses
         - Interests
-        - Teching Style
+        - Teaching Style
         - Professional Goals
         - Availability
 
